@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>امتحان إلكتروني مطور - 40 سؤال (تقييم + إبداع)</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; margin: 20px; background: #f4f4f9; }
+        header { text-align: center; padding: 15px; background: #2c3e50; color: white; border-radius: 8px; margin-bottom: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        .question { display: none; margin-bottom: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+        .options label { display: block; margin: 5px 0; }
+        .buttons { text-align: center; margin-top: 20px; }
+        button { padding: 10px 20px; margin: 5px; background: #2c3e50; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #34495e; }
+        #result { margin-top: 20px; font-size: 18px; font-weight: bold; text-align: center; }
+        #answers { margin-top: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>مدرسة الفيصلية الثانوية للبنين</h2>
+    <p>مادة: علوم الأرض - الوحدة الأولى</p>
+    <p>المعلم: محمد ملكاوي</p>
+</header>
+
+<h1>امتحان إلكتروني مطور - 40 سؤال (تقييم + إبداع)</h1>
+<form id="quizForm">
+<div class="question" id="q1" style="display:block"><p>1- ما الحل الأكثر فعالية لتقليل الاعتماد على الوقود الأحفوري في إنتاج الكهرباء؟</p><div class='options'><label><input type="radio" name="q1" value="0"> زيادة محطات الفحم لوفرتها</label><label><input type="radio" name="q1" value="1"> الاعتماد على الطاقة المتجددة كالشمس والرياح</label><label><input type="radio" name="q1" value="0"> التوسع في استخدام النفط لأنه أسرع</label><label><input type="radio" name="q1" value="0"> إيقاف وسائل النقل بشكل كامل</label></div><div class='buttons'><button type='button' onclick='nextQuestion(1)'>التالي</button></div></div>
+<div class="question" id="q2" style="display:none"><p>2- أي خيار أفضل للحد من انبعاثات قطاع النقل؟</p><div class='options'><label><input type="radio" name="q2" value="1"> التوسع في السيارات الكهربائية</label><label><input type="radio" name="q2" value="0"> زيادة سيارات الديزل لأنها متينة</label><label><input type="radio" name="q2" value="0"> استخدام الفحم كمصدر للطاقة</label><label><input type="radio" name="q2" value="0"> منع النقل العام لخفض الازدحام</label></div><div class='buttons'><button type='button' onclick='prevQuestion(2)'>السابق</button><button type='button' onclick='nextQuestion(2)'>التالي</button></div></div>
+<div class="question" id="q3" style="display:none"><p>3- أفضل إجراء للحد من الأمطار الحمضية هو:</p><div class='options'><label><input type="radio" name="q3" value="1"> خفض انبعاثات ثاني أكسيد الكبريت من المصانع</label><label><input type="radio" name="q3" value="0"> زيادة الكبريت في الوقود لخفض تكلفته</label><label><input type="radio" name="q3" value="0"> التوسع في النفط لزيادة الإنتاج</label><label><input type="radio" name="q3" value="0"> زيادة استهلاك الفحم</label></div><div class='buttons'><button type='button' onclick='prevQuestion(3)'>السابق</button><button type='button' onclick='nextQuestion(3)'>التالي</button></div></div>
+<div class="question" id="q4" style="display:none"><p>4- أي بديل أنسب للنفط في النقل على المدى البعيد؟</p><div class='options'><label><input type="radio" name="q4" value="0"> الطاقة الشمسية المباشرة للسيارات</label><label><input type="radio" name="q4" value="1"> الهيدروجين كوقود نظيف</label><label><input type="radio" name="q4" value="0"> الغاز الطبيعي فقط</label><label><input type="radio" name="q4" value="0"> الفحم الحجري</label></div><div class='buttons'><button type='button' onclick='prevQuestion(4)'>السابق</button><button type='button' onclick='nextQuestion(4)'>التالي</button></div></div>
+<div class="question" id="q5" style="display:none"><p>5- أفضل طريقة لتقليل انبعاثات المصانع هي:</p><div class='options'><label><input type="radio" name="q5" value="1"> تحسين كفاءة الطاقة وتقنيات الفلترة</label><label><input type="radio" name="q5" value="0"> زيادة الاعتماد على الفحم لأنه رخيص</label><label><input type="radio" name="q5" value="0"> إلغاء الفلاتر لتقليل التكلفة</label><label><input type="radio" name="q5" value="0"> الاعتماد الكلي على النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(5)'>السابق</button><button type='button' onclick='nextQuestion(5)'>التالي</button></div></div>
+<div class="question" id="q6" style="display:none"><p>6- تقييم أثر السيارات الكهربائية يوضح أنها:</p><div class='options'><label><input type="radio" name="q6" value="1"> تخفض الانبعاثات المباشرة للعادم</label><label><input type="radio" name="q6" value="0"> تزيد الانبعاثات مقارنة بالديزل</label><label><input type="radio" name="q6" value="0"> لا تغير أي شيء</label><label><input type="radio" name="q6" value="0"> تزيد انبعاثات الكبريت</label></div><div class='buttons'><button type='button' onclick='prevQuestion(6)'>السابق</button><button type='button' onclick='nextQuestion(6)'>التالي</button></div></div>
+<div class="question" id="q7" style="display:none"><p>7- أي خيار استراتيجي أنسب لمستقبل الطاقة العالمي؟</p><div class='options'><label><input type="radio" name="q7" value="1"> تنويع المصادر بين متجددة وأحفورية</label><label><input type="radio" name="q7" value="0"> زيادة الاعتماد على الفحم فقط</label><label><input type="radio" name="q7" value="0"> إلغاء مشاريع الطاقة المتجددة</label><label><input type="radio" name="q7" value="0"> التوسع في النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(7)'>السابق</button><button type='button' onclick='nextQuestion(7)'>التالي</button></div></div>
+<div class="question" id="q8" style="display:none"><p>8- أفضل استراتيجية لمواجهة تغير المناخ هي:</p><div class='options'><label><input type="radio" name="q8" value="1"> التوسع في الطاقة المتجددة مع ترشيد الاستهلاك</label><label><input type="radio" name="q8" value="0"> زيادة استخراج النفط</label><label><input type="radio" name="q8" value="0"> زيادة الاعتماد على الفحم</label><label><input type="radio" name="q8" value="0"> إلغاء وسائل النقل الحديثة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(8)'>السابق</button><button type='button' onclick='nextQuestion(8)'>التالي</button></div></div>
+<div class="question" id="q9" style="display:none"><p>9- الفائدة الأساسية لزراعة الأشجار على المناخ هي:</p><div class='options'><label><input type="radio" name="q9" value="1"> امتصاص CO₂ عبر البناء الضوئي</label><label><input type="radio" name="q9" value="0"> زيادة انبعاثات الغازات الدفيئة</label><label><input type="radio" name="q9" value="0"> زيادة الكبريت في الجو</label><label><input type="radio" name="q9" value="0"> رفع درجة حرارة الأرض</label></div><div class='buttons'><button type='button' onclick='prevQuestion(9)'>السابق</button><button type='button' onclick='nextQuestion(9)'>التالي</button></div></div>
+<div class="question" id="q10" style="display:none"><p>10- أنظف بديل للطاقة لتوليد الكهرباء هو:</p><div class='options'><label><input type="radio" name="q10" value="1"> الطاقة الشمسية والرياح</label><label><input type="radio" name="q10" value="0"> الفحم</label><label><input type="radio" name="q10" value="0"> النفط الخام</label><label><input type="radio" name="q10" value="0"> الغاز الطبيعي وحده</label></div><div class='buttons'><button type='button' onclick='prevQuestion(10)'>السابق</button><button type='button' onclick='nextQuestion(10)'>التالي</button></div></div>
+<div class="question" id="q11" style="display:none"><p>11- أفضل حل لتقليل التلوث في المدن الكبرى هو:</p><div class='options'><label><input type="radio" name="q11" value="1"> تحسين وتوسيع النقل العام</label><label><input type="radio" name="q11" value="0"> زيادة السيارات الخاصة</label><label><input type="radio" name="q11" value="0"> زيادة استهلاك النفط</label><label><input type="radio" name="q11" value="0"> التوسع في الفحم الحجري</label></div><div class='buttons'><button type='button' onclick='prevQuestion(11)'>السابق</button><button type='button' onclick='nextQuestion(11)'>التالي</button></div></div>
+<div class="question" id="q12" style="display:none"><p>12- أثر الطاقة النووية مقارنة بالأحفورية يتمثل في أنها:</p><div class='options'><label><input type="radio" name="q12" value="1"> لا تطلق CO₂ أثناء التشغيل</label><label><input type="radio" name="q12" value="0"> تزيد انبعاثات الكربون</label><label><input type="radio" name="q12" value="0"> تزيد ثاني أكسيد الكبريت</label><label><input type="radio" name="q12" value="0"> ترفع الأوزون الأرضي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(12)'>السابق</button><button type='button' onclick='nextQuestion(12)'>التالي</button></div></div>
+<div class="question" id="q13" style="display:none"><p>13- السياسة الأكثر استدامة لمستقبل الطاقة هي:</p><div class='options'><label><input type="radio" name="q13" value="1"> الاعتماد على مصادر متجددة متنوعة</label><label><input type="radio" name="q13" value="0"> زيادة إنتاج النفط</label><label><input type="radio" name="q13" value="0"> التوسع في الفحم</label><label><input type="radio" name="q13" value="0"> إلغاء مشاريع الطاقة الشمسية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(13)'>السابق</button><button type='button' onclick='nextQuestion(13)'>التالي</button></div></div>
+<div class="question" id="q14" style="display:none"><p>14- أفضل بديل للفحم في محطات الكهرباء هو:</p><div class='options'><label><input type="radio" name="q14" value="1"> الغاز الطبيعي الأقل انبعاثًا</label><label><input type="radio" name="q14" value="0"> النفط الخام</label><label><input type="radio" name="q14" value="0"> الطاقة الشمسية فقط</label><label><input type="radio" name="q14" value="0"> الأوزون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(14)'>السابق</button><button type='button' onclick='nextQuestion(14)'>التالي</button></div></div>
+<div class="question" id="q15" style="display:none"><p>15- السياسة الأنجع لمكافحة التغير المناخي:</p><div class='options'><label><input type="radio" name="q15" value="1"> خفض انبعاثات الغازات الدفيئة</label><label><input type="radio" name="q15" value="0"> زيادة الانبعاثات لتسريع التنمية</label><label><input type="radio" name="q15" value="0"> إلغاء الطاقة المتجددة</label><label><input type="radio" name="q15" value="0"> التوسع في النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(15)'>السابق</button><button type='button' onclick='nextQuestion(15)'>التالي</button></div></div>
+<div class="question" id="q16" style="display:none"><p>16- الأوزون في طبقة الستراتوسفير دوره:</p><div class='options'><label><input type="radio" name="q16" value="1"> يحمي الأرض من الأشعة فوق البنفسجية</label><label><input type="radio" name="q16" value="0"> يزيد تراكم CO₂</label><label><input type="radio" name="q16" value="0"> يزيد الكبريت</label><label><input type="radio" name="q16" value="0"> يزيد الميثان</label></div><div class='buttons'><button type='button' onclick='prevQuestion(16)'>السابق</button><button type='button' onclick='nextQuestion(16)'>التالي</button></div></div>
+<div class="question" id="q17" style="display:none"><p>17- أفضل إجراء لتقليل تلوث المحيطات بالنفط هو:</p><div class='options'><label><input type="radio" name="q17" value="1"> منع ومعالجة التسربات النفطية</label><label><input type="radio" name="q17" value="0"> زيادة النقل البحري</label><label><input type="radio" name="q17" value="0"> زيادة النفط</label><label><input type="radio" name="q17" value="0"> إلغاء الطاقة الشمسية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(17)'>السابق</button><button type='button' onclick='nextQuestion(17)'>التالي</button></div></div>
+<div class="question" id="q18" style="display:none"><p>18- أي وسيلة فعالة لتقليل استهلاك الوقود الأحفوري؟</p><div class='options'><label><input type="radio" name="q18" value="1"> التوسع في النقل العام</label><label><input type="radio" name="q18" value="0"> زيادة السيارات الخاصة</label><label><input type="radio" name="q18" value="0"> التوسع في الفحم</label><label><input type="radio" name="q18" value="0"> زيادة الاعتماد على النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(18)'>السابق</button><button type='button' onclick='nextQuestion(18)'>التالي</button></div></div>
+<div class="question" id="q19" style="display:none"><p>19- أفضل طريقة لخفض غازات الدفيئة هي:</p><div class='options'><label><input type="radio" name="q19" value="1"> التوسع في الطاقة المتجددة</label><label><input type="radio" name="q19" value="0"> زيادة الفحم</label><label><input type="radio" name="q19" value="0"> زيادة النفط</label><label><input type="radio" name="q19" value="0"> زيادة الكبريت</label></div><div class='buttons'><button type='button' onclick='prevQuestion(19)'>السابق</button><button type='button' onclick='nextQuestion(19)'>التالي</button></div></div>
+<div class="question" id="q20" style="display:none"><p>20- لتقليل التلوث المنزلي بشكل فعال:</p><div class='options'><label><input type="radio" name="q20" value="1"> استخدام الغاز الطبيعي بدل الفحم في الطهي</label><label><input type="radio" name="q20" value="0"> زيادة استخدام الفحم</label><label><input type="radio" name="q20" value="0"> زيادة النفط</label><label><input type="radio" name="q20" value="0"> زيادة الكبريت</label></div><div class='buttons'><button type='button' onclick='prevQuestion(20)'>السابق</button><button type='button' onclick='nextQuestion(20)'>التالي</button></div></div>
+<div class="question" id="q21" style="display:none"><p>21- تخيل أنك مسؤول عن خطة الطاقة، ما القرار الأكثر استدامة؟</p><div class='options'><label><input type="radio" name="q21" value="0"> الاعتماد على مصدر واحد فقط</label><label><input type="radio" name="q21" value="1"> تنويع مصادر الطاقة بين متجددة ونظيفة</label><label><input type="radio" name="q21" value="0"> تجاهل مشكلة المناخ</label><label><input type="radio" name="q21" value="0"> زيادة استخراج النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(21)'>السابق</button><button type='button' onclick='nextQuestion(21)'>التالي</button></div></div>
+<div class="question" id="q22" style="display:none"><p>22- ابتكر وسيلة لتقليل تلوث الهواء في المدن:</p><div class='options'><label><input type="radio" name="q22" value="1"> توسيع النقل العام وتشجيع الدراجات</label><label><input type="radio" name="q22" value="0"> زيادة السيارات الخاصة</label><label><input type="radio" name="q22" value="0"> التوسع في الفحم الحجري</label><label><input type="radio" name="q22" value="0"> زيادة النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(22)'>السابق</button><button type='button' onclick='nextQuestion(22)'>التالي</button></div></div>
+<div class="question" id="q23" style="display:none"><p>23- اقترح وسيلة لخفض استهلاك الطاقة في المنازل:</p><div class='options'><label><input type="radio" name="q23" value="1"> استخدام العزل الحراري والأجهزة الكفؤة</label><label><input type="radio" name="q23" value="0"> زيادة التدفئة بالفحم</label><label><input type="radio" name="q23" value="0"> زيادة الاعتماد على النفط</label><label><input type="radio" name="q23" value="0"> استخدام الغاز أكثر</label></div><div class='buttons'><button type='button' onclick='prevQuestion(23)'>السابق</button><button type='button' onclick='nextQuestion(23)'>التالي</button></div></div>
+<div class="question" id="q24" style="display:none"><p>24- إذا اخترعت سيارة جديدة، ما مصدر الطاقة الأفضل لها؟</p><div class='options'><label><input type="radio" name="q24" value="1"> الكهرباء من مصادر متجددة</label><label><input type="radio" name="q24" value="0"> الفحم</label><label><input type="radio" name="q24" value="0"> النفط</label><label><input type="radio" name="q24" value="0"> الغاز الطبيعي التقليدي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(24)'>السابق</button><button type='button' onclick='nextQuestion(24)'>التالي</button></div></div>
+<div class="question" id="q25" style="display:none"><p>25- أفضل فكرة لتقليل انبعاثات المصانع:</p><div class='options'><label><input type="radio" name="q25" value="1"> تركيب فلاتر متطورة ومعالجة الانبعاثات</label><label><input type="radio" name="q25" value="0"> زيادة الفحم لخفض التكلفة</label><label><input type="radio" name="q25" value="0"> الاعتماد الكلي على النفط</label><label><input type="radio" name="q25" value="0"> إلغاء مشاريع الطاقة الشمسية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(25)'>السابق</button><button type='button' onclick='nextQuestion(25)'>التالي</button></div></div>
+<div class="question" id="q26" style="display:none"><p>26- حل إبداعي للتعامل مع النفايات هو:</p><div class='options'><label><input type="radio" name="q26" value="1"> إعادة التدوير والاستفادة منها</label><label><input type="radio" name="q26" value="0"> زيادة الحرق المباشر</label><label><input type="radio" name="q26" value="0"> زيادة الدفن العشوائي</label><label><input type="radio" name="q26" value="0"> زيادة الاعتماد على النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(26)'>السابق</button><button type='button' onclick='nextQuestion(26)'>التالي</button></div></div>
+<div class="question" id="q27" style="display:none"><p>27- بديل أنسب للفحم في الطهي هو:</p><div class='options'><label><input type="radio" name="q27" value="1"> الغاز الطبيعي الأنظف</label><label><input type="radio" name="q27" value="0"> الفحم</label><label><input type="radio" name="q27" value="0"> النفط الخام</label><label><input type="radio" name="q27" value="0"> الخشب التقليدي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(27)'>السابق</button><button type='button' onclick='nextQuestion(27)'>التالي</button></div></div>
+<div class="question" id="q28" style="display:none"><p>28- إذا أردنا إنتاج كهرباء نظيفة بشكل موسع:</p><div class='options'><label><input type="radio" name="q28" value="1"> الاعتماد على الطاقة الشمسية والرياح</label><label><input type="radio" name="q28" value="0"> الفحم</label><label><input type="radio" name="q28" value="0"> النفط</label><label><input type="radio" name="q28" value="0"> الغاز الطبيعي فقط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(28)'>السابق</button><button type='button' onclick='nextQuestion(28)'>التالي</button></div></div>
+<div class="question" id="q29" style="display:none"><p>29- وسيلة مبتكرة للتنقل بدون انبعاثات:</p><div class='options'><label><input type="radio" name="q29" value="1"> السيارات الكهربائية المعتمدة على المتجددة</label><label><input type="radio" name="q29" value="0"> السيارات النفطية التقليدية</label><label><input type="radio" name="q29" value="0"> الفحم الحجري</label><label><input type="radio" name="q29" value="0"> الغاز التقليدي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(29)'>السابق</button><button type='button' onclick='nextQuestion(29)'>التالي</button></div></div>
+<div class="question" id="q30" style="display:none"><p>30- تقليل استهلاك الوقود في الزراعة يتم عبر:</p><div class='options'><label><input type="radio" name="q30" value="1"> استخدام الطاقة الشمسية للري والآلات</label><label><input type="radio" name="q30" value="0"> زيادة الديزل</label><label><input type="radio" name="q30" value="0"> زيادة الفحم</label><label><input type="radio" name="q30" value="0"> زيادة النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(30)'>السابق</button><button type='button' onclick='nextQuestion(30)'>التالي</button></div></div>
+<div class="question" id="q31" style="display:none"><p>31- لخفض الاعتماد على النفط عالميًا يمكن:</p><div class='options'><label><input type="radio" name="q31" value="1"> التوسع في الطاقة المتجددة</label><label><input type="radio" name="q31" value="0"> زيادة إنتاج النفط</label><label><input type="radio" name="q31" value="0"> زيادة الفحم</label><label><input type="radio" name="q31" value="0"> زيادة الكبريت</label></div><div class='buttons'><button type='button' onclick='prevQuestion(31)'>السابق</button><button type='button' onclick='nextQuestion(31)'>التالي</button></div></div>
+<div class="question" id="q32" style="display:none"><p>32- إذا صممت مدينة جديدة، ما أنسب مصادر الطاقة لها؟</p><div class='options'><label><input type="radio" name="q32" value="1"> الطاقة المتجددة النظيفة</label><label><input type="radio" name="q32" value="0"> النفط</label><label><input type="radio" name="q32" value="0"> الفحم</label><label><input type="radio" name="q32" value="0"> الغاز</label></div><div class='buttons'><button type='button' onclick='prevQuestion(32)'>السابق</button><button type='button' onclick='nextQuestion(32)'>التالي</button></div></div>
+<div class="question" id="q33" style="display:none"><p>33- وسيلة عملية لخفض استهلاك الكهرباء في المدارس:</p><div class='options'><label><input type="radio" name="q33" value="1"> تركيب ألواح شمسية وأساليب ترشيد</label><label><input type="radio" name="q33" value="0"> زيادة استخدام الكهرباء</label><label><input type="radio" name="q33" value="0"> زيادة الاعتماد على النفط</label><label><input type="radio" name="q33" value="0"> زيادة الفحم</label></div><div class='buttons'><button type='button' onclick='prevQuestion(33)'>السابق</button><button type='button' onclick='nextQuestion(33)'>التالي</button></div></div>
+<div class="question" id="q34" style="display:none"><p>34- طريقة مبتكرة للتقليل من الاحتباس الحراري:</p><div class='options'><label><input type="radio" name="q34" value="1"> خفض الانبعاثات عبر سياسات صارمة</label><label><input type="radio" name="q34" value="0"> زيادة الانبعاثات للتوسع الصناعي</label><label><input type="radio" name="q34" value="0"> زيادة الفحم</label><label><input type="radio" name="q34" value="0"> زيادة النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(34)'>السابق</button><button type='button' onclick='nextQuestion(34)'>التالي</button></div></div>
+<div class="question" id="q35" style="display:none"><p>35- أفضل وسيلة لنقل البضائع بلا تلوث:</p><div class='options'><label><input type="radio" name="q35" value="1"> القطارات الكهربائية</label><label><input type="radio" name="q35" value="0"> الشاحنات النفطية</label><label><input type="radio" name="q35" value="0"> الفحم</label><label><input type="radio" name="q35" value="0"> الغاز</label></div><div class='buttons'><button type='button' onclick='prevQuestion(35)'>السابق</button><button type='button' onclick='nextQuestion(35)'>التالي</button></div></div>
+<div class="question" id="q36" style="display:none"><p>36- لحماية الغابات بشكل فعال يجب:</p><div class='options'><label><input type="radio" name="q36" value="1"> منع القطع الجائر والتوسع في التشجير</label><label><input type="radio" name="q36" value="0"> زيادة قطع الأشجار</label><label><input type="radio" name="q36" value="0"> زيادة الاعتماد على الفحم</label><label><input type="radio" name="q36" value="0"> زيادة النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(36)'>السابق</button><button type='button' onclick='nextQuestion(36)'>التالي</button></div></div>
+<div class="question" id="q37" style="display:none"><p>37- إذا صممت طائرة صديقة للبيئة فإن وقودها الأنسب هو:</p><div class='options'><label><input type="radio" name="q37" value="1"> الوقود الحيوي النظيف</label><label><input type="radio" name="q37" value="0"> الفحم الحجري</label><label><input type="radio" name="q37" value="0"> النفط</label><label><input type="radio" name="q37" value="0"> الغاز الطبيعي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(37)'>السابق</button><button type='button' onclick='nextQuestion(37)'>التالي</button></div></div>
+<div class="question" id="q38" style="display:none"><p>38- أفضل حل لتقليل تلوث المياه هو:</p><div class='options'><label><input type="radio" name="q38" value="1"> منع التسربات النفطية ومعالجتها</label><label><input type="radio" name="q38" value="0"> زيادة النفط في النقل</label><label><input type="radio" name="q38" value="0"> زيادة الفحم</label><label><input type="radio" name="q38" value="0"> زيادة الكبريت</label></div><div class='buttons'><button type='button' onclick='prevQuestion(38)'>السابق</button><button type='button' onclick='nextQuestion(38)'>التالي</button></div></div>
+<div class="question" id="q39" style="display:none"><p>39- لحماية الهواء بشكل إبداعي نقترح:</p><div class='options'><label><input type="radio" name="q39" value="1"> الاعتماد على الطاقة النظيفة</label><label><input type="radio" name="q39" value="0"> زيادة النفط</label><label><input type="radio" name="q39" value="0"> زيادة الفحم</label><label><input type="radio" name="q39" value="0"> زيادة الكبريت</label></div><div class='buttons'><button type='button' onclick='prevQuestion(39)'>السابق</button><button type='button' onclick='nextQuestion(39)'>التالي</button></div></div>
+<div class="question" id="q40" style="display:none"><p>40- إذا أردنا بيوتًا صديقة للبيئة فإن الخيار الأفضل هو:</p><div class='options'><label><input type="radio" name="q40" value="1"> العزل الجيد + الطاقة الشمسية</label><label><input type="radio" name="q40" value="0"> زيادة الكهرباء</label><label><input type="radio" name="q40" value="0"> زيادة النفط</label><label><input type="radio" name="q40" value="0"> زيادة الفحم</label></div><div class='buttons'><button type='button' onclick='prevQuestion(40)'>السابق</button><button type='button' onclick='calculateResult()'>إنهاء الاختبار</button></div></div>
+
+</form>
+<div id="result"></div>
+<div id="answers"></div>
+
+<script>
+let total = 40;
+let correctAnswers = {};
+correctAnswers[1] = 'الاعتماد على الطاقة المتجددة كالشمس والرياح';
+correctAnswers[2] = 'التوسع في السيارات الكهربائية';
+correctAnswers[3] = 'خفض انبعاثات ثاني أكسيد الكبريت من المصانع';
+correctAnswers[4] = 'الهيدروجين كوقود نظيف';
+correctAnswers[5] = 'تحسين كفاءة الطاقة وتقنيات الفلترة';
+correctAnswers[6] = 'تخفض الانبعاثات المباشرة للعادم';
+correctAnswers[7] = 'تنويع المصادر بين متجددة وأحفورية';
+correctAnswers[8] = 'التوسع في الطاقة المتجددة مع ترشيد الاستهلاك';
+correctAnswers[9] = 'امتصاص CO₂ عبر البناء الضوئي';
+correctAnswers[10] = 'الطاقة الشمسية والرياح';
+correctAnswers[11] = 'تحسين وتوسيع النقل العام';
+correctAnswers[12] = 'لا تطلق CO₂ أثناء التشغيل';
+correctAnswers[13] = 'الاعتماد على مصادر متجددة متنوعة';
+correctAnswers[14] = 'الغاز الطبيعي الأقل انبعاثًا';
+correctAnswers[15] = 'خفض انبعاثات الغازات الدفيئة';
+correctAnswers[16] = 'يحمي الأرض من الأشعة فوق البنفسجية';
+correctAnswers[17] = 'منع ومعالجة التسربات النفطية';
+correctAnswers[18] = 'التوسع في النقل العام';
+correctAnswers[19] = 'التوسع في الطاقة المتجددة';
+correctAnswers[20] = 'استخدام الغاز الطبيعي بدل الفحم في الطهي';
+correctAnswers[21] = 'تنويع مصادر الطاقة بين متجددة ونظيفة';
+correctAnswers[22] = 'توسيع النقل العام وتشجيع الدراجات';
+correctAnswers[23] = 'استخدام العزل الحراري والأجهزة الكفؤة';
+correctAnswers[24] = 'الكهرباء من مصادر متجددة';
+correctAnswers[25] = 'تركيب فلاتر متطورة ومعالجة الانبعاثات';
+correctAnswers[26] = 'إعادة التدوير والاستفادة منها';
+correctAnswers[27] = 'الغاز الطبيعي الأنظف';
+correctAnswers[28] = 'الاعتماد على الطاقة الشمسية والرياح';
+correctAnswers[29] = 'السيارات الكهربائية المعتمدة على المتجددة';
+correctAnswers[30] = 'استخدام الطاقة الشمسية للري والآلات';
+correctAnswers[31] = 'التوسع في الطاقة المتجددة';
+correctAnswers[32] = 'الطاقة المتجددة النظيفة';
+correctAnswers[33] = 'تركيب ألواح شمسية وأساليب ترشيد';
+correctAnswers[34] = 'خفض الانبعاثات عبر سياسات صارمة';
+correctAnswers[35] = 'القطارات الكهربائية';
+correctAnswers[36] = 'منع القطع الجائر والتوسع في التشجير';
+correctAnswers[37] = 'الوقود الحيوي النظيف';
+correctAnswers[38] = 'منع التسربات النفطية ومعالجتها';
+correctAnswers[39] = 'الاعتماد على الطاقة النظيفة';
+correctAnswers[40] = 'العزل الجيد + الطاقة الشمسية';
+
+function showQuestion(id) {
+    document.querySelectorAll('.question').forEach(q => q.style.display = "none");
+    document.getElementById('q' + id).style.display = "block";
+}
+function nextQuestion(i) { showQuestion(i+1); }
+function prevQuestion(i) { showQuestion(i-1); }
+
+function calculateResult() {
+    let score = 0;
+    let wrongAnswers = [];
+    for (let i = 1; i <= total; i++) {
+        let q = document.querySelector('input[name="q'+i+'"]:checked');
+        if (q && q.value === "1") {
+            score++;
+        } else if (!q || q.value !== "1") {
+            wrongAnswers.push(i);
+        }
+    }
+    document.getElementById("result").innerText = "درجتك: " + score + " من " + total;
+    let answersDiv = document.getElementById("answers");
+    answersDiv.innerHTML = "<h3>الإجابات الصحيحة للأسئلة الخاطئة:</h3>";
+    wrongAnswers.forEach(num => {
+        answersDiv.innerHTML += "<p>السؤال " + num + ": " + correctAnswers[num] + "</p>";
+    });
+}
+</script>
+
+</body>
+</html>

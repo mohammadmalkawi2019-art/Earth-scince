@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>امتحان إلكتروني مطور - 40 سؤال (تطبيق + تحليل)</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; margin: 20px; background: #f4f4f9; }
+        header { text-align: center; padding: 15px; background: #2c3e50; color: white; border-radius: 8px; margin-bottom: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        .question { display: none; margin-bottom: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+        .options label { display: block; margin: 5px 0; }
+        .buttons { text-align: center; margin-top: 20px; }
+        button { padding: 10px 20px; margin: 5px; background: #2c3e50; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #34495e; }
+        #result { margin-top: 20px; font-size: 18px; font-weight: bold; text-align: center; }
+        #answers { margin-top: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>مدرسة الفيصلية الثانوية للبنين</h2>
+    <p>مادة: علوم الأرض - الوحدة الأولى</p>
+    <p>المعلم: محمد ملكاوي</p>
+</header>
+
+<h1>امتحان إلكتروني مطور - 40 سؤال (تطبيق + تحليل)</h1>
+<form id="quizForm">
+<div class="question" id="q1" style="display:block"><p>1- إذا نتج عن احتراق 1 لتر من البنزين 2.31 كغ من CO₂، فكم ينتج عن 10 لترات؟</p><div class='options'><label><input type="radio" name="q1" value="0"> 2.31 كغ (نفس القيمة)</label><label><input type="radio" name="q1" value="1"> 23.1 كغ (أضعاف الكمية)</label><label><input type="radio" name="q1" value="0"> 231 كغ (مبالغة)</label><label><input type="radio" name="q1" value="0"> 0.231 كغ (أقل بعشر مرات)</label></div><div class='buttons'><button type='button' onclick='nextQuestion(1)'>التالي</button></div></div>
+<div class="question" id="q2" style="display:none"><p>2- محطة كهرباء حرارية تستهلك 100 طن فحم، الأثر المباشر هو:</p><div class='options'><label><input type="radio" name="q2" value="1"> إطلاق كميات كبيرة من CO₂</label><label><input type="radio" name="q2" value="0"> انخفاض الحرارة العالمية</label><label><input type="radio" name="q2" value="0"> تكوين طبقة أوزون إضافية</label><label><input type="radio" name="q2" value="0"> عدم حدوث تلوث</label></div><div class='buttons'><button type='button' onclick='prevQuestion(2)'>السابق</button><button type='button' onclick='nextQuestion(2)'>التالي</button></div></div>
+<div class="question" id="q3" style="display:none"><p>3- عند مقارنة انبعاثات الغاز الطبيعي بالفحم الحجري نجد أن الغاز الطبيعي:</p><div class='options'><label><input type="radio" name="q3" value="0"> يطلق كربون أكثر لأنه أنظف</label><label><input type="radio" name="q3" value="1"> يطلق كربون أقل نسبيًا</label><label><input type="radio" name="q3" value="0"> لا يطلق أي غازات إطلاقًا</label><label><input type="radio" name="q3" value="0"> يزيد الأوزون الأرضي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(3)'>السابق</button><button type='button' onclick='nextQuestion(3)'>التالي</button></div></div>
+<div class="question" id="q4" style="display:none"><p>4- سيارة تعمل بالبنزين لمسافة طويلة ينتج عنها بشكل رئيسي:</p><div class='options'><label><input type="radio" name="q4" value="1"> انبعاث أول أكسيد الكربون من الاحتراق غير الكامل</label><label><input type="radio" name="q4" value="0"> زيادة الأكسجين الحر</label><label><input type="radio" name="q4" value="0"> زيادة التبخر من الوقود</label><label><input type="radio" name="q4" value="0"> انخفاض غازات الدفيئة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(4)'>السابق</button><button type='button' onclick='nextQuestion(4)'>التالي</button></div></div>
+<div class="question" id="q5" style="display:none"><p>5- إذا استبدلت دولة جميع محطات الفحم بمحطات شمسية ورياح فإن:</p><div class='options'><label><input type="radio" name="q5" value="1"> الانبعاثات ستنخفض بوضوح</label><label><input type="radio" name="q5" value="0"> الانبعاثات ستزداد</label><label><input type="radio" name="q5" value="0"> لن يتغير شيء</label><label><input type="radio" name="q5" value="0"> النفط سيصبح أكثر استخدامًا</label></div><div class='buttons'><button type='button' onclick='prevQuestion(5)'>السابق</button><button type='button' onclick='nextQuestion(5)'>التالي</button></div></div>
+<div class="question" id="q6" style="display:none"><p>6- تسرب نفطي في البحر يؤدي إلى:</p><div class='options'><label><input type="radio" name="q6" value="1"> تلويث المياه والتربة البحرية</label><label><input type="radio" name="q6" value="0"> زيادة إنتاج الأسماك</label><label><input type="radio" name="q6" value="0"> زيادة ذوبان الأكسجين</label><label><input type="radio" name="q6" value="0"> تحسين جودة المياه</label></div><div class='buttons'><button type='button' onclick='prevQuestion(6)'>السابق</button><button type='button' onclick='nextQuestion(6)'>التالي</button></div></div>
+<div class="question" id="q7" style="display:none"><p>7- إذا كانت انبعاثات الميثان أقوى من CO₂، فإن تقليل أعداد المواشي:</p><div class='options'><label><input type="radio" name="q7" value="1"> يساهم في خفض الاحتباس الحراري</label><label><input type="radio" name="q7" value="0"> يزيد CO₂ المنبعث</label><label><input type="radio" name="q7" value="0"> يزيد الحرارة بدل تخفيضها</label><label><input type="radio" name="q7" value="0"> لا يحدث تأثير يذكر</label></div><div class='buttons'><button type='button' onclick='prevQuestion(7)'>السابق</button><button type='button' onclick='nextQuestion(7)'>التالي</button></div></div>
+<div class="question" id="q8" style="display:none"><p>8- حرق الغاز الطبيعي بدل الفحم في الصناعات يؤدي إلى:</p><div class='options'><label><input type="radio" name="q8" value="1"> خفض الانبعاثات مقارنة بالفحم</label><label><input type="radio" name="q8" value="0"> زيادة الانبعاثات عن الفحم</label><label><input type="radio" name="q8" value="0"> ثبات مستوى الانبعاثات</label><label><input type="radio" name="q8" value="0"> إلغاء الانبعاثات تمامًا</label></div><div class='buttons'><button type='button' onclick='prevQuestion(8)'>السابق</button><button type='button' onclick='nextQuestion(8)'>التالي</button></div></div>
+<div class="question" id="q9" style="display:none"><p>9- زيادة استخدام السيارات الكهربائية يعني:</p><div class='options'><label><input type="radio" name="q9" value="1"> انخفاض انبعاثات عوادم المركبات</label><label><input type="radio" name="q9" value="0"> زيادة أول أكسيد الكربون</label><label><input type="radio" name="q9" value="0"> زيادة التلوث الهوائي</label><label><input type="radio" name="q9" value="0"> عدم الحاجة للطاقة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(9)'>السابق</button><button type='button' onclick='nextQuestion(9)'>التالي</button></div></div>
+<div class="question" id="q10" style="display:none"><p>10- التحول إلى الطاقة النووية بدل الأحفورية يؤدي غالبًا إلى:</p><div class='options'><label><input type="radio" name="q10" value="1"> تقليل انبعاثات CO₂ أثناء التشغيل</label><label><input type="radio" name="q10" value="0"> زيادة انبعاثات ثاني أكسيد الكربون</label><label><input type="radio" name="q10" value="0"> ثبات الانبعاثات</label><label><input type="radio" name="q10" value="0"> زيادة الإشعاعات الكونية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(10)'>السابق</button><button type='button' onclick='nextQuestion(10)'>التالي</button></div></div>
+<div class="question" id="q11" style="display:none"><p>11- إذا نتج عن 1 طن فحم 2.5 طن CO₂، فكم ينتج عن 4 أطنان؟</p><div class='options'><label><input type="radio" name="q11" value="0"> 2.5 طن (لا يتغير)</label><label><input type="radio" name="q11" value="1"> 10 طن (أضعاف النسبة)</label><label><input type="radio" name="q11" value="0"> 1 طن فقط</label><label><input type="radio" name="q11" value="0"> 40 طن مبالغ فيه</label></div><div class='buttons'><button type='button' onclick='prevQuestion(11)'>السابق</button><button type='button' onclick='nextQuestion(11)'>التالي</button></div></div>
+<div class="question" id="q12" style="display:none"><p>12- مزارع يعتمد على طاقة الرياح بدل مولدات الديزل:</p><div class='options'><label><input type="radio" name="q12" value="1"> يقلل انبعاث الملوثات</label><label><input type="radio" name="q12" value="0"> يزيد التلوث الهوائي</label><label><input type="radio" name="q12" value="0"> يزيد انبعاث CO₂</label><label><input type="radio" name="q12" value="0"> لا يغير أي شيء</label></div><div class='buttons'><button type='button' onclick='prevQuestion(12)'>السابق</button><button type='button' onclick='nextQuestion(12)'>التالي</button></div></div>
+<div class="question" id="q13" style="display:none"><p>13- زراعة الأشجار بكثافة تؤدي إلى:</p><div class='options'><label><input type="radio" name="q13" value="1"> امتصاص CO₂ عبر البناء الضوئي</label><label><input type="radio" name="q13" value="0"> إطلاق CO₂ إضافي</label><label><input type="radio" name="q13" value="0"> إنتاج غاز الميثان</label><label><input type="radio" name="q13" value="0"> زيادة تكوين الأوزون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(13)'>السابق</button><button type='button' onclick='nextQuestion(13)'>التالي</button></div></div>
+<div class="question" id="q14" style="display:none"><p>14- استخدام السيارات الهجينة بدل التقليدية يساهم في:</p><div class='options'><label><input type="radio" name="q14" value="1"> خفض انبعاثات العادم</label><label><input type="radio" name="q14" value="0"> زيادة الانبعاثات الكلية</label><label><input type="radio" name="q14" value="0"> ثبات نسبة التلوث</label><label><input type="radio" name="q14" value="0"> زيادة الملوثات الكبريتية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(14)'>السابق</button><button type='button' onclick='nextQuestion(14)'>التالي</button></div></div>
+<div class="question" id="q15" style="display:none"><p>15- الطهي بالغاز الطبيعي مقارنة بالفحم يؤدي إلى:</p><div class='options'><label><input type="radio" name="q15" value="1"> تقليل الملوثات داخل المنزل</label><label><input type="radio" name="q15" value="0"> زيادة التلوث الداخلي</label><label><input type="radio" name="q15" value="0"> عدم وجود فرق</label><label><input type="radio" name="q15" value="0"> زيادة أول أكسيد الكربون بشدة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(15)'>السابق</button><button type='button' onclick='nextQuestion(15)'>التالي</button></div></div>
+<div class="question" id="q16" style="display:none"><p>16- إغلاق مصنع يطلق ملوثات كثيفة يؤدي غالبًا إلى:</p><div class='options'><label><input type="radio" name="q16" value="1"> تحسن جودة الهواء المحيط</label><label><input type="radio" name="q16" value="0"> زيادة نسبة التلوث</label><label><input type="radio" name="q16" value="0"> زيادة تراكم CO₂</label><label><input type="radio" name="q16" value="0"> زيادة الأمطار الحمضية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(16)'>السابق</button><button type='button' onclick='nextQuestion(16)'>التالي</button></div></div>
+<div class="question" id="q17" style="display:none"><p>17- إذا تم خفض استهلاك الوقود الأحفوري 50% فإن:</p><div class='options'><label><input type="radio" name="q17" value="1"> الانبعاثات ستنخفض بوضوح</label><label><input type="radio" name="q17" value="0"> الانبعاثات ستزداد</label><label><input type="radio" name="q17" value="0"> لن تتغير إطلاقًا</label><label><input type="radio" name="q17" value="0"> يزداد التلوث أكثر</label></div><div class='buttons'><button type='button' onclick='prevQuestion(17)'>السابق</button><button type='button' onclick='nextQuestion(17)'>التالي</button></div></div>
+<div class="question" id="q18" style="display:none"><p>18- استخدام النقل الكهربائي المعتمد على الطاقة المتجددة يؤدي إلى:</p><div class='options'><label><input type="radio" name="q18" value="1"> انخفاض انبعاثات النقل</label><label><input type="radio" name="q18" value="0"> زيادة الانبعاثات</label><label><input type="radio" name="q18" value="0"> ثبات الانبعاثات</label><label><input type="radio" name="q18" value="0"> زيادة الكبريت في الجو</label></div><div class='buttons'><button type='button' onclick='prevQuestion(18)'>السابق</button><button type='button' onclick='nextQuestion(18)'>التالي</button></div></div>
+<div class="question" id="q19" style="display:none"><p>19- حرق النفايات البلاستيكية كوقود بديل يؤدي إلى:</p><div class='options'><label><input type="radio" name="q19" value="1"> زيادة الملوثات الهوائية السامة</label><label><input type="radio" name="q19" value="0"> خفض التلوث العام</label><label><input type="radio" name="q19" value="0"> عدم تغيير الوضع</label><label><input type="radio" name="q19" value="0"> زيادة الأوزون المفيد</label></div><div class='buttons'><button type='button' onclick='prevQuestion(19)'>السابق</button><button type='button' onclick='nextQuestion(19)'>التالي</button></div></div>
+<div class="question" id="q20" style="display:none"><p>20- استخدام الطاقة الشمسية المنزلية يؤدي إلى:</p><div class='options'><label><input type="radio" name="q20" value="1"> خفض الاعتماد على الوقود الأحفوري</label><label><input type="radio" name="q20" value="0"> زيادة الطلب على النفط</label><label><input type="radio" name="q20" value="0"> زيادة انبعاثات CO₂</label><label><input type="radio" name="q20" value="0"> زيادة التلوث الهوائي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(20)'>السابق</button><button type='button' onclick='nextQuestion(20)'>التالي</button></div></div>
+<div class="question" id="q21" style="display:none"><p>21- أي القطاعات يسهم بأعلى نسبة من انبعاثات الغازات الدفيئة عالميًا؟</p><div class='options'><label><input type="radio" name="q21" value="0"> الزراعة التقليدية</label><label><input type="radio" name="q21" value="0"> الصناعة التحويلية</label><label><input type="radio" name="q21" value="1"> قطاع الطاقة وإنتاج الكهرباء</label><label><input type="radio" name="q21" value="0"> التخلص من النفايات</label></div><div class='buttons'><button type='button' onclick='prevQuestion(21)'>السابق</button><button type='button' onclick='nextQuestion(21)'>التالي</button></div></div>
+<div class="question" id="q22" style="display:none"><p>22- تحليل بيانات يظهر أن النقل أكبر مصدر للانبعاثات، هذا يعني:</p><div class='options'><label><input type="radio" name="q22" value="1"> السيارات والشاحنات مسؤولة عن النسبة الكبرى</label><label><input type="radio" name="q22" value="0"> الصناعة هي المصدر الأكبر</label><label><input type="radio" name="q22" value="0"> الزراعة هي المصدر الأهم</label><label><input type="radio" name="q22" value="0"> الطاقة المتجددة هي المصدر الأكبر</label></div><div class='buttons'><button type='button' onclick='prevQuestion(22)'>السابق</button><button type='button' onclick='nextQuestion(22)'>التالي</button></div></div>
+<div class="question" id="q23" style="display:none"><p>23- ارتفاع نسبة CO₂ في الجو يؤدي غالبًا إلى:</p><div class='options'><label><input type="radio" name="q23" value="1"> زيادة متوسط حرارة الأرض</label><label><input type="radio" name="q23" value="0"> انخفاض الحرارة</label><label><input type="radio" name="q23" value="0"> زيادة نسبة الأكسجين</label><label><input type="radio" name="q23" value="0"> زيادة تركيز الأوزون العلوي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(23)'>السابق</button><button type='button' onclick='nextQuestion(23)'>التالي</button></div></div>
+<div class="question" id="q24" style="display:none"><p>24- العلاقة الصحيحة بين الوقود الأحفوري والانبعاثات هي:</p><div class='options'><label><input type="radio" name="q24" value="1"> زيادة الاحتراق تعني زيادة الانبعاثات</label><label><input type="radio" name="q24" value="0"> زيادة الاحتراق تعني انخفاض الانبعاثات</label><label><input type="radio" name="q24" value="0"> لا توجد علاقة</label><label><input type="radio" name="q24" value="0"> الانبعاثات ثابتة دومًا</label></div><div class='buttons'><button type='button' onclick='prevQuestion(24)'>السابق</button><button type='button' onclick='nextQuestion(24)'>التالي</button></div></div>
+<div class="question" id="q25" style="display:none"><p>25- تحليل انبعاثات المدن الصناعية يوضح:</p><div class='options'><label><input type="radio" name="q25" value="1"> ارتفاع التلوث الهوائي</label><label><input type="radio" name="q25" value="0"> انخفاض الحرارة العامة</label><label><input type="radio" name="q25" value="0"> زيادة الأكسجين</label><label><input type="radio" name="q25" value="0"> انخفاض الأمطار الحمضية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(25)'>السابق</button><button type='button' onclick='nextQuestion(25)'>التالي</button></div></div>
+<div class="question" id="q26" style="display:none"><p>26- زيادة الطلب العالمي على النفط تؤدي إلى:</p><div class='options'><label><input type="radio" name="q26" value="1"> زيادة الانبعاثات الضارة</label><label><input type="radio" name="q26" value="0"> انخفاض الانبعاثات</label><label><input type="radio" name="q26" value="0"> ثبات الوضع</label><label><input type="radio" name="q26" value="0"> زيادة الأوزون المفيد</label></div><div class='buttons'><button type='button' onclick='prevQuestion(26)'>السابق</button><button type='button' onclick='nextQuestion(26)'>التالي</button></div></div>
+<div class="question" id="q27" style="display:none"><p>27- ارتفاع الميثان في الغلاف الجوي غالبًا ناتج عن:</p><div class='options'><label><input type="radio" name="q27" value="1"> تربية الماشية والمستنقعات</label><label><input type="radio" name="q27" value="0"> زيادة الأكسجين</label><label><input type="radio" name="q27" value="0"> زيادة الأوزون</label><label><input type="radio" name="q27" value="0"> انخفاض الحرارة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(27)'>السابق</button><button type='button' onclick='nextQuestion(27)'>التالي</button></div></div>
+<div class="question" id="q28" style="display:none"><p>28- ارتفاع حرارة الأرض يؤدي إلى:</p><div class='options'><label><input type="radio" name="q28" value="1"> ذوبان الجليد القطبي</label><label><input type="radio" name="q28" value="0"> زيادة الأكسجين الحر</label><label><input type="radio" name="q28" value="0"> انخفاض CO₂</label><label><input type="radio" name="q28" value="0"> زيادة الأوزون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(28)'>السابق</button><button type='button' onclick='nextQuestion(28)'>التالي</button></div></div>
+<div class="question" id="q29" style="display:none"><p>29- انخفاض انبعاثات ثاني أكسيد الكبريت يؤدي إلى:</p><div class='options'><label><input type="radio" name="q29" value="1"> انخفاض الأمطار الحمضية</label><label><input type="radio" name="q29" value="0"> زيادة الأمطار الحمضية</label><label><input type="radio" name="q29" value="0"> ثباتها</label><label><input type="radio" name="q29" value="0"> زيادة التلوث العام</label></div><div class='buttons'><button type='button' onclick='prevQuestion(29)'>السابق</button><button type='button' onclick='nextQuestion(29)'>التالي</button></div></div>
+<div class="question" id="q30" style="display:none"><p>30- بيانات تشير أن الغاز الطبيعي أنظف من الفحم، هذا يعني:</p><div class='options'><label><input type="radio" name="q30" value="1"> انبعاثاته أقل من الفحم</label><label><input type="radio" name="q30" value="0"> انبعاثاته أعلى</label><label><input type="radio" name="q30" value="0"> لا انبعاثات على الإطلاق</label><label><input type="radio" name="q30" value="0"> يزيد الكبريت دائمًا</label></div><div class='buttons'><button type='button' onclick='prevQuestion(30)'>السابق</button><button type='button' onclick='nextQuestion(30)'>التالي</button></div></div>
+<div class="question" id="q31" style="display:none"><p>31- زيادة حرق الفحم يؤدي إلى:</p><div class='options'><label><input type="radio" name="q31" value="1"> زيادة انبعاثات CO₂</label><label><input type="radio" name="q31" value="0"> انخفاض CO₂</label><label><input type="radio" name="q31" value="0"> ثبات الانبعاثات</label><label><input type="radio" name="q31" value="0"> زيادة الأكسجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(31)'>السابق</button><button type='button' onclick='nextQuestion(31)'>التالي</button></div></div>
+<div class="question" id="q32" style="display:none"><p>32- من آثار التغير المناخي عالميًا:</p><div class='options'><label><input type="radio" name="q32" value="1"> زيادة الفيضانات والعواصف</label><label><input type="radio" name="q32" value="0"> انخفاض درجات الحرارة</label><label><input type="radio" name="q32" value="0"> زيادة الأكسجين</label><label><input type="radio" name="q32" value="0"> انخفاض CO₂</label></div><div class='buttons'><button type='button' onclick='prevQuestion(32)'>السابق</button><button type='button' onclick='nextQuestion(32)'>التالي</button></div></div>
+<div class="question" id="q33" style="display:none"><p>33- زيادة انبعاثات ثاني أكسيد الكبريت مرتبطة بـ:</p><div class='options'><label><input type="radio" name="q33" value="1"> تكون الأمطار الحمضية</label><label><input type="radio" name="q33" value="0"> زيادة الأوزون العلوي</label><label><input type="radio" name="q33" value="0"> زيادة النيتروجين</label><label><input type="radio" name="q33" value="0"> زيادة الأكسجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(33)'>السابق</button><button type='button' onclick='nextQuestion(33)'>التالي</button></div></div>
+<div class="question" id="q34" style="display:none"><p>34- صور أقمار صناعية لذوبان الجليد تشير إلى:</p><div class='options'><label><input type="radio" name="q34" value="1"> ارتفاع حرارة الأرض</label><label><input type="radio" name="q34" value="0"> انخفاض حرارة الأرض</label><label><input type="radio" name="q34" value="0"> زيادة الأكسجين</label><label><input type="radio" name="q34" value="0"> انخفاض الأوزون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(34)'>السابق</button><button type='button' onclick='nextQuestion(34)'>التالي</button></div></div>
+<div class="question" id="q35" style="display:none"><p>35- زيادة الانبعاثات في المدن الكبرى تسبب:</p><div class='options'><label><input type="radio" name="q35" value="1"> تدهور نوعية الهواء</label><label><input type="radio" name="q35" value="0"> تحسن جودة الهواء</label><label><input type="radio" name="q35" value="0"> زيادة الأكسجين</label><label><input type="radio" name="q35" value="0"> انخفاض الحرارة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(35)'>السابق</button><button type='button' onclick='nextQuestion(35)'>التالي</button></div></div>
+<div class="question" id="q36" style="display:none"><p>36- القطاع الأكثر استهلاكًا للوقود الأحفوري عالميًا هو:</p><div class='options'><label><input type="radio" name="q36" value="1"> النقل</label><label><input type="radio" name="q36" value="0"> الصناعة</label><label><input type="radio" name="q36" value="0"> الزراعة</label><label><input type="radio" name="q36" value="0"> النفايات</label></div><div class='buttons'><button type='button' onclick='prevQuestion(36)'>السابق</button><button type='button' onclick='nextQuestion(36)'>التالي</button></div></div>
+<div class="question" id="q37" style="display:none"><p>37- تحليل بيانات الانبعاثات يقترح أن الحل الأمثل هو:</p><div class='options'><label><input type="radio" name="q37" value="1"> زيادة اعتماد الطاقة المتجددة</label><label><input type="radio" name="q37" value="0"> زيادة الاعتماد على الفحم</label><label><input type="radio" name="q37" value="0"> زيادة النفط</label><label><input type="radio" name="q37" value="0"> تجاهل المشكلة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(37)'>السابق</button><button type='button' onclick='nextQuestion(37)'>التالي</button></div></div>
+<div class="question" id="q38" style="display:none"><p>38- إذا ارتفعت حرارة الأرض درجتين مئويتين، فمن المتوقع:</p><div class='options'><label><input type="radio" name="q38" value="1"> تغيرات مناخية خطيرة</label><label><input type="radio" name="q38" value="0"> زيادة الأكسجين</label><label><input type="radio" name="q38" value="0"> انخفاض CO₂</label><label><input type="radio" name="q38" value="0"> زيادة الأوزون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(38)'>السابق</button><button type='button' onclick='nextQuestion(38)'>التالي</button></div></div>
+<div class="question" id="q39" style="display:none"><p>39- زيادة الاعتماد على الطاقة المتجددة يؤدي إلى:</p><div class='options'><label><input type="radio" name="q39" value="1"> انخفاض الانبعاثات الحرارية</label><label><input type="radio" name="q39" value="0"> زيادة الانبعاثات</label><label><input type="radio" name="q39" value="0"> ثبات الوضع</label><label><input type="radio" name="q39" value="0"> زيادة الكبريت</label></div><div class='buttons'><button type='button' onclick='prevQuestion(39)'>السابق</button><button type='button' onclick='nextQuestion(39)'>التالي</button></div></div>
+<div class="question" id="q40" style="display:none"><p>40- إذا تبين أن المصانع أكبر مصدر للتلوث، فإن الحل:</p><div class='options'><label><input type="radio" name="q40" value="1"> تقليل الانبعاثات الصناعية</label><label><input type="radio" name="q40" value="0"> زيادة الفحم</label><label><input type="radio" name="q40" value="0"> زيادة النفط</label><label><input type="radio" name="q40" value="0"> إلغاء الطاقة المتجددة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(40)'>السابق</button><button type='button' onclick='calculateResult()'>إنهاء الاختبار</button></div></div>
+
+</form>
+<div id="result"></div>
+<div id="answers"></div>
+
+<script>
+let total = 40;
+let correctAnswers = {};
+correctAnswers[1] = '23.1 كغ (أضعاف الكمية)';
+correctAnswers[2] = 'إطلاق كميات كبيرة من CO₂';
+correctAnswers[3] = 'يطلق كربون أقل نسبيًا';
+correctAnswers[4] = 'انبعاث أول أكسيد الكربون من الاحتراق غير الكامل';
+correctAnswers[5] = 'الانبعاثات ستنخفض بوضوح';
+correctAnswers[6] = 'تلويث المياه والتربة البحرية';
+correctAnswers[7] = 'يساهم في خفض الاحتباس الحراري';
+correctAnswers[8] = 'خفض الانبعاثات مقارنة بالفحم';
+correctAnswers[9] = 'انخفاض انبعاثات عوادم المركبات';
+correctAnswers[10] = 'تقليل انبعاثات CO₂ أثناء التشغيل';
+correctAnswers[11] = '10 طن (أضعاف النسبة)';
+correctAnswers[12] = 'يقلل انبعاث الملوثات';
+correctAnswers[13] = 'امتصاص CO₂ عبر البناء الضوئي';
+correctAnswers[14] = 'خفض انبعاثات العادم';
+correctAnswers[15] = 'تقليل الملوثات داخل المنزل';
+correctAnswers[16] = 'تحسن جودة الهواء المحيط';
+correctAnswers[17] = 'الانبعاثات ستنخفض بوضوح';
+correctAnswers[18] = 'انخفاض انبعاثات النقل';
+correctAnswers[19] = 'زيادة الملوثات الهوائية السامة';
+correctAnswers[20] = 'خفض الاعتماد على الوقود الأحفوري';
+correctAnswers[21] = 'قطاع الطاقة وإنتاج الكهرباء';
+correctAnswers[22] = 'السيارات والشاحنات مسؤولة عن النسبة الكبرى';
+correctAnswers[23] = 'زيادة متوسط حرارة الأرض';
+correctAnswers[24] = 'زيادة الاحتراق تعني زيادة الانبعاثات';
+correctAnswers[25] = 'ارتفاع التلوث الهوائي';
+correctAnswers[26] = 'زيادة الانبعاثات الضارة';
+correctAnswers[27] = 'تربية الماشية والمستنقعات';
+correctAnswers[28] = 'ذوبان الجليد القطبي';
+correctAnswers[29] = 'انخفاض الأمطار الحمضية';
+correctAnswers[30] = 'انبعاثاته أقل من الفحم';
+correctAnswers[31] = 'زيادة انبعاثات CO₂';
+correctAnswers[32] = 'زيادة الفيضانات والعواصف';
+correctAnswers[33] = 'تكون الأمطار الحمضية';
+correctAnswers[34] = 'ارتفاع حرارة الأرض';
+correctAnswers[35] = 'تدهور نوعية الهواء';
+correctAnswers[36] = 'النقل';
+correctAnswers[37] = 'زيادة اعتماد الطاقة المتجددة';
+correctAnswers[38] = 'تغيرات مناخية خطيرة';
+correctAnswers[39] = 'انخفاض الانبعاثات الحرارية';
+correctAnswers[40] = 'تقليل الانبعاثات الصناعية';
+
+function showQuestion(id) {
+    document.querySelectorAll('.question').forEach(q => q.style.display = "none");
+    document.getElementById('q' + id).style.display = "block";
+}
+function nextQuestion(i) { showQuestion(i+1); }
+function prevQuestion(i) { showQuestion(i-1); }
+
+function calculateResult() {
+    let score = 0;
+    let wrongAnswers = [];
+    for (let i = 1; i <= total; i++) {
+        let q = document.querySelector('input[name="q'+i+'"]:checked');
+        if (q && q.value === "1") {
+            score++;
+        } else if (!q || q.value !== "1") {
+            wrongAnswers.push(i);
+        }
+    }
+    document.getElementById("result").innerText = "درجتك: " + score + " من " + total;
+    let answersDiv = document.getElementById("answers");
+    answersDiv.innerHTML = "<h3>الإجابات الصحيحة للأسئلة الخاطئة:</h3>";
+    wrongAnswers.forEach(num => {
+        answersDiv.innerHTML += "<p>السؤال " + num + ": " + correctAnswers[num] + "</p>";
+    });
+}
+</script>
+
+</body>
+</html>

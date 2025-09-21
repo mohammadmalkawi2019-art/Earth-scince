@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>امتحان إلكتروني مطور - 40 سؤال (تذكر + فهم)</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; margin: 20px; background: #f4f4f9; }
+        header { text-align: center; padding: 15px; background: #2c3e50; color: white; border-radius: 8px; margin-bottom: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        .question { display: none; margin-bottom: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+        .options label { display: block; margin: 5px 0; }
+        .buttons { text-align: center; margin-top: 20px; }
+        button { padding: 10px 20px; margin: 5px; background: #2c3e50; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #34495e; }
+        #result { margin-top: 20px; font-size: 18px; font-weight: bold; text-align: center; }
+        #answers { margin-top: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>مدرسة الفيصلية الثانوية للبنين</h2>
+    <p>مادة: علوم الأرض - الوحدة الأولى</p>
+    <p>المعلم: محمد ملكاوي</p>
+</header>
+
+<h1>امتحان إلكتروني مطور - 40 سؤال (تذكر + فهم)</h1>
+<form id="quizForm">
+<div class="question" id="q1" style="display:block"><p>1- العنصر الأساسي المسؤول عن معظم انبعاثات غازات الدفيئة الناتجة عن النشاط البشري هو:</p><div class='options'><label><input type="radio" name="q1" value="0"> الأكسجين الناتج من النباتات</label><label><input type="radio" name="q1" value="1"> ثاني أكسيد الكربون الناتج من احتراق الوقود الأحفوري</label><label><input type="radio" name="q1" value="0"> الميثان المنبعث من تحلل المواد العضوية</label><label><input type="radio" name="q1" value="0"> بخار الماء الناتج من التبخر البحري</label></div><div class='buttons'><button type='button' onclick='nextQuestion(1)'>التالي</button></div></div>
+<div class="question" id="q2" style="display:none"><p>2- المصدر الرئيسي للطاقة الذي يسبب أكبر نسبة من الانبعاثات عالميًا هو:</p><div class='options'><label><input type="radio" name="q2" value="1"> الفحم الحجري المستخدم في محطات الكهرباء</label><label><input type="radio" name="q2" value="0"> الطاقة الشمسية</label><label><input type="radio" name="q2" value="0"> الغاز الطبيعي</label><label><input type="radio" name="q2" value="0"> الطاقة النووية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(2)'>السابق</button><button type='button' onclick='nextQuestion(2)'>التالي</button></div></div>
+<div class="question" id="q3" style="display:none"><p>3- غاز الميثان مقارنة بثاني أكسيد الكربون من حيث تأثيره الحراري:</p><div class='options'><label><input type="radio" name="q3" value="0"> أضعف منه</label><label><input type="radio" name="q3" value="1"> أقوى بعدة أضعاف في حبس الحرارة</label><label><input type="radio" name="q3" value="0"> متساوٍ معه تمامًا</label><label><input type="radio" name="q3" value="0"> لا علاقة له بالاحتباس الحراري</label></div><div class='buttons'><button type='button' onclick='prevQuestion(3)'>السابق</button><button type='button' onclick='nextQuestion(3)'>التالي</button></div></div>
+<div class="question" id="q4" style="display:none"><p>4- الطبقة المسؤولة عن حماية الأرض من الأشعة فوق البنفسجية هي:</p><div class='options'><label><input type="radio" name="q4" value="1"> طبقة الأوزون في الستراتوسفير</label><label><input type="radio" name="q4" value="0"> التروبوسفير</label><label><input type="radio" name="q4" value="0"> الميزوسفير</label><label><input type="radio" name="q4" value="0"> الغلاف المائي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(4)'>السابق</button><button type='button' onclick='nextQuestion(4)'>التالي</button></div></div>
+<div class="question" id="q5" style="display:none"><p>5- الأثر المباشر لاحتراق الوقود الأحفوري على الغلاف الجوي هو:</p><div class='options'><label><input type="radio" name="q5" value="0"> إطلاق غازات عديمة اللون والرائحة فقط</label><label><input type="radio" name="q5" value="1"> زيادة تراكم الغازات الدفيئة التي تحبس الحرارة</label><label><input type="radio" name="q5" value="0"> زيادة كمية الأكسجين الحر</label><label><input type="radio" name="q5" value="0"> تقليل نسبة النيتروجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(5)'>السابق</button><button type='button' onclick='nextQuestion(5)'>التالي</button></div></div>
+<div class="question" id="q6" style="display:none"><p>6- المصدر الأكثر شيوعًا لانبعاثات أول أكسيد الكربون هو:</p><div class='options'><label><input type="radio" name="q6" value="0"> الأنشطة البركانية</label><label><input type="radio" name="q6" value="1"> عوادم السيارات</label><label><input type="radio" name="q6" value="0"> النشاط الزراعي</label><label><input type="radio" name="q6" value="0"> الأمطار الحمضية</label></div><div class='buttons'><button type='button' onclick='prevQuestion(6)'>السابق</button><button type='button' onclick='nextQuestion(6)'>التالي</button></div></div>
+<div class="question" id="q7" style="display:none"><p>7- العامل الأساسي في ظاهرة الاحتباس الحراري هو:</p><div class='options'><label><input type="radio" name="q7" value="1"> زيادة الغازات الدفيئة</label><label><input type="radio" name="q7" value="0"> انخفاض الأكسجين</label><label><input type="radio" name="q7" value="0"> ارتفاع نسبة النيتروجين</label><label><input type="radio" name="q7" value="0"> انخفاض التلوث</label></div><div class='buttons'><button type='button' onclick='prevQuestion(7)'>السابق</button><button type='button' onclick='nextQuestion(7)'>التالي</button></div></div>
+<div class="question" id="q8" style="display:none"><p>8- من أهم مصادر غاز الميثان:</p><div class='options'><label><input type="radio" name="q8" value="0"> الطاقة الشمسية</label><label><input type="radio" name="q8" value="1"> تحلل المواد العضوية في المستنقعات</label><label><input type="radio" name="q8" value="0"> الرياح</label><label><input type="radio" name="q8" value="0"> الأوزون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(8)'>السابق</button><button type='button' onclick='nextQuestion(8)'>التالي</button></div></div>
+<div class="question" id="q9" style="display:none"><p>9- من مصادر الطاقة المتجددة التي تقلل الانبعاثات:</p><div class='options'><label><input type="radio" name="q9" value="0"> الفحم الحجري</label><label><input type="radio" name="q9" value="1"> الطاقة الشمسية والرياح</label><label><input type="radio" name="q9" value="0"> النفط</label><label><input type="radio" name="q9" value="0"> الغاز الطبيعي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(9)'>السابق</button><button type='button' onclick='nextQuestion(9)'>التالي</button></div></div>
+<div class="question" id="q10" style="display:none"><p>10- إحدى نتائج الاحتباس الحراري هي:</p><div class='options'><label><input type="radio" name="q10" value="0"> استقرار المناخ</label><label><input type="radio" name="q10" value="1"> ذوبان الجليد وارتفاع مستوى البحار</label><label><input type="radio" name="q10" value="0"> زيادة ثبات درجات الحرارة</label><label><input type="radio" name="q10" value="0"> زيادة نسبة الأكسجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(10)'>السابق</button><button type='button' onclick='nextQuestion(10)'>التالي</button></div></div>
+<div class="question" id="q11" style="display:none"><p>11- المكون الأكثر وفرة في الغلاف الجوي هو:</p><div class='options'><label><input type="radio" name="q11" value="0"> الأكسجين</label><label><input type="radio" name="q11" value="1"> النيتروجين</label><label><input type="radio" name="q11" value="0"> ثاني أكسيد الكربون</label><label><input type="radio" name="q11" value="0"> الأرجون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(11)'>السابق</button><button type='button' onclick='nextQuestion(11)'>التالي</button></div></div>
+<div class="question" id="q12" style="display:none"><p>12- تستخدم طاقة الرياح والطاقة الشمسية بشكل أساسي لأنها:</p><div class='options'><label><input type="radio" name="q12" value="0"> أقل كلفة دائمًا</label><label><input type="radio" name="q12" value="1"> لا تطلق غازات ملوثة أثناء التشغيل</label><label><input type="radio" name="q12" value="0"> لا تحتاج صيانة إطلاقًا</label><label><input type="radio" name="q12" value="0"> تنتج كهرباء بلا توقف</label></div><div class='buttons'><button type='button' onclick='prevQuestion(12)'>السابق</button><button type='button' onclick='nextQuestion(12)'>التالي</button></div></div>
+<div class="question" id="q13" style="display:none"><p>13- الوقود الحيوي يُنتج من:</p><div class='options'><label><input type="radio" name="q13" value="0"> الخشب فقط</label><label><input type="radio" name="q13" value="1"> المحاصيل الزراعية والزيوت</label><label><input type="radio" name="q13" value="0"> المعادن</label><label><input type="radio" name="q13" value="0"> الغازات النبيلة</label></div><div class='buttons'><button type='button' onclick='prevQuestion(13)'>السابق</button><button type='button' onclick='nextQuestion(13)'>التالي</button></div></div>
+<div class="question" id="q14" style="display:none"><p>14- الأثر الرئيسي للأمطار الحمضية هو:</p><div class='options'><label><input type="radio" name="q14" value="0"> زيادة خصوبة التربة</label><label><input type="radio" name="q14" value="1"> إتلاف الغابات والتربة والمياه</label><label><input type="radio" name="q14" value="0"> زيادة الأوزون</label><label><input type="radio" name="q14" value="0"> زيادة الأكسجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(14)'>السابق</button><button type='button' onclick='nextQuestion(14)'>التالي</button></div></div>
+<div class="question" id="q15" style="display:none"><p>15- أكثر الدول إنتاجًا لانبعاثات CO₂ عالميًا هي:</p><div class='options'><label><input type="radio" name="q15" value="1"> الصين</label><label><input type="radio" name="q15" value="0"> السعودية</label><label><input type="radio" name="q15" value="0"> ألمانيا</label><label><input type="radio" name="q15" value="0"> كندا</label></div><div class='buttons'><button type='button' onclick='prevQuestion(15)'>السابق</button><button type='button' onclick='nextQuestion(15)'>التالي</button></div></div>
+<div class="question" id="q16" style="display:none"><p>16- من مصادر غاز أكسيد النيتروز:</p><div class='options'><label><input type="radio" name="q16" value="1"> الأسمدة الزراعية</label><label><input type="radio" name="q16" value="0"> الطاقة الشمسية</label><label><input type="radio" name="q16" value="0"> التبخر البحري</label><label><input type="radio" name="q16" value="0"> الرياح</label></div><div class='buttons'><button type='button' onclick='prevQuestion(16)'>السابق</button><button type='button' onclick='nextQuestion(16)'>التالي</button></div></div>
+<div class="question" id="q17" style="display:none"><p>17- الاحتباس الحراري يؤدي إلى:</p><div class='options'><label><input type="radio" name="q17" value="0"> انخفاض حرارة الأرض</label><label><input type="radio" name="q17" value="1"> ارتفاع درجات الحرارة العالمية</label><label><input type="radio" name="q17" value="0"> ثبات درجات الحرارة</label><label><input type="radio" name="q17" value="0"> زيادة نسبة النيتروجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(17)'>السابق</button><button type='button' onclick='nextQuestion(17)'>التالي</button></div></div>
+<div class="question" id="q18" style="display:none"><p>18- استخدام الفحم الحجري في الصناعة يؤدي إلى:</p><div class='options'><label><input type="radio" name="q18" value="0"> انخفاض الملوثات</label><label><input type="radio" name="q18" value="1"> زيادة انبعاثات الغازات الدفيئة</label><label><input type="radio" name="q18" value="0"> ثبات مستوى CO₂</label><label><input type="radio" name="q18" value="0"> انخفاض الانبعاثات</label></div><div class='buttons'><button type='button' onclick='prevQuestion(18)'>السابق</button><button type='button' onclick='nextQuestion(18)'>التالي</button></div></div>
+<div class="question" id="q19" style="display:none"><p>19- الطبقة الأقرب إلى سطح الأرض هي:</p><div class='options'><label><input type="radio" name="q19" value="1"> التروبوسفير</label><label><input type="radio" name="q19" value="0"> الستراتوسفير</label><label><input type="radio" name="q19" value="0"> الميزوسفير</label><label><input type="radio" name="q19" value="0"> الثيرموسفير</label></div><div class='buttons'><button type='button' onclick='prevQuestion(19)'>السابق</button><button type='button' onclick='nextQuestion(19)'>التالي</button></div></div>
+<div class="question" id="q20" style="display:none"><p>20- التأثير المباشر لزيادة الميثان هو:</p><div class='options'><label><input type="radio" name="q20" value="1"> ارتفاع درجات الحرارة</label><label><input type="radio" name="q20" value="0"> انخفاض الأمطار</label><label><input type="radio" name="q20" value="0"> زيادة الأوزون</label><label><input type="radio" name="q20" value="0"> ثبات المناخ</label></div><div class='buttons'><button type='button' onclick='prevQuestion(20)'>السابق</button><button type='button' onclick='nextQuestion(20)'>التالي</button></div></div>
+<div class="question" id="q21" style="display:none"><p>21- العلاقة بين استهلاك الوقود الأحفوري وازدياد الاحتباس الحراري يمكن وصفها بأنها:</p><div class='options'><label><input type="radio" name="q21" value="1"> علاقة طردية حيث يزداد الاحترار مع زيادة الاستهلاك</label><label><input type="radio" name="q21" value="0"> علاقة عكسية</label><label><input type="radio" name="q21" value="0"> لا توجد علاقة مباشرة</label><label><input type="radio" name="q21" value="0"> تأثير يعتمد فقط على النشاط الشمسي</label></div><div class='buttons'><button type='button' onclick='prevQuestion(21)'>السابق</button><button type='button' onclick='nextQuestion(21)'>التالي</button></div></div>
+<div class="question" id="q22" style="display:none"><p>22- الاعتماد على الطاقة المتجددة يساهم في:</p><div class='options'><label><input type="radio" name="q22" value="1"> خفض الانبعاثات الضارة بالجو</label><label><input type="radio" name="q22" value="0"> زيادة انبعاثات CO₂</label><label><input type="radio" name="q22" value="0"> زيادة الأمطار الحمضية</label><label><input type="radio" name="q22" value="0"> زيادة الاحتباس الحراري</label></div><div class='buttons'><button type='button' onclick='prevQuestion(22)'>السابق</button><button type='button' onclick='nextQuestion(22)'>التالي</button></div></div>
+<div class="question" id="q23" style="display:none"><p>23- إزالة الغابات تؤدي إلى:</p><div class='options'><label><input type="radio" name="q23" value="0"> زيادة امتصاص CO₂</label><label><input type="radio" name="q23" value="1"> زيادة تراكم CO₂ في الغلاف الجوي</label><label><input type="radio" name="q23" value="0"> ثبات تركيز CO₂</label><label><input type="radio" name="q23" value="0"> زيادة إنتاج الأكسجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(23)'>السابق</button><button type='button' onclick='nextQuestion(23)'>التالي</button></div></div>
+<div class="question" id="q24" style="display:none"><p>24- أحد أهم أسباب زيادة الملوثات الهوائية هو:</p><div class='options'><label><input type="radio" name="q24" value="1"> الأنشطة البشرية كالمصانع والنقل</label><label><input type="radio" name="q24" value="0"> الانفجارات البركانية فقط</label><label><input type="radio" name="q24" value="0"> الرياح</label><label><input type="radio" name="q24" value="0"> المحيطات</label></div><div class='buttons'><button type='button' onclick='prevQuestion(24)'>السابق</button><button type='button' onclick='nextQuestion(24)'>التالي</button></div></div>
+<div class="question" id="q25" style="display:none"><p>25- استخدام السيارات الكهربائية يساعد في:</p><div class='options'><label><input type="radio" name="q25" value="1"> تقليل انبعاثات عوادم السيارات</label><label><input type="radio" name="q25" value="0"> زيادة استهلاك البنزين</label><label><input type="radio" name="q25" value="0"> زيادة انبعاثات الكبريت</label><label><input type="radio" name="q25" value="0"> زيادة أكاسيد النيتروجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(25)'>السابق</button><button type='button' onclick='nextQuestion(25)'>التالي</button></div></div>
+<div class="question" id="q26" style="display:none"><p>26- الطاقة النووية تفضل أحيانًا لأنها:</p><div class='options'><label><input type="radio" name="q26" value="1"> لا تطلق CO₂ أثناء التشغيل</label><label><input type="radio" name="q26" value="0"> تنتج ملوثات أكثر</label><label><input type="radio" name="q26" value="0"> أرخص من الطاقة الشمسية دائمًا</label><label><input type="radio" name="q26" value="0"> تزيد من ظاهرة الاحتباس الحراري</label></div><div class='buttons'><button type='button' onclick='prevQuestion(26)'>السابق</button><button type='button' onclick='nextQuestion(26)'>التالي</button></div></div>
+<div class="question" id="q27" style="display:none"><p>27- العلاقة بين الغازات الدفيئة وارتفاع الحرارة:</p><div class='options'><label><input type="radio" name="q27" value="1"> كلما زادت الغازات ارتفعت الحرارة</label><label><input type="radio" name="q27" value="0"> كلما زادت الغازات انخفضت الحرارة</label><label><input type="radio" name="q27" value="0"> لا علاقة بينهما</label><label><input type="radio" name="q27" value="0"> العلاقة تعتمد فقط على البراكين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(27)'>السابق</button><button type='button' onclick='nextQuestion(27)'>التالي</button></div></div>
+<div class="question" id="q28" style="display:none"><p>28- السبب في خطورة الأمطار الحمضية هو:</p><div class='options'><label><input type="radio" name="q28" value="1"> تتلف الغابات والتربة والمياه</label><label><input type="radio" name="q28" value="0"> تزيد من خصوبة التربة</label><label><input type="radio" name="q28" value="0"> تزيد من إنتاج الأكسجين</label><label><input type="radio" name="q28" value="0"> تحسن جودة الهواء</label></div><div class='buttons'><button type='button' onclick='prevQuestion(28)'>السابق</button><button type='button' onclick='nextQuestion(28)'>التالي</button></div></div>
+<div class="question" id="q29" style="display:none"><p>29- أحد أهم أسباب تلوث المياه هو:</p><div class='options'><label><input type="radio" name="q29" value="1"> تسرب النفط والنفايات الصناعية</label><label><input type="radio" name="q29" value="0"> زيادة الأكسجين</label><label><input type="radio" name="q29" value="0"> الأمطار الحمضية</label><label><input type="radio" name="q29" value="0"> زيادة ثاني أكسيد الكربون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(29)'>السابق</button><button type='button' onclick='nextQuestion(29)'>التالي</button></div></div>
+<div class="question" id="q30" style="display:none"><p>30- زيادة الاعتماد على الوقود الأحفوري يعني:</p><div class='options'><label><input type="radio" name="q30" value="1"> زيادة انبعاث الغازات الدفيئة</label><label><input type="radio" name="q30" value="0"> انخفاض الانبعاثات</label><label><input type="radio" name="q30" value="0"> ثبات الحرارة</label><label><input type="radio" name="q30" value="0"> انخفاض نسبة ثاني أكسيد الكربون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(30)'>السابق</button><button type='button' onclick='nextQuestion(30)'>التالي</button></div></div>
+<div class="question" id="q31" style="display:none"><p>31- الفرق بين الطاقة المتجددة وغير المتجددة:</p><div class='options'><label><input type="radio" name="q31" value="1"> المتجددة لا تنفد وتقلل الانبعاثات</label><label><input type="radio" name="q31" value="0"> المتجددة تنفد بسرعة</label><label><input type="radio" name="q31" value="0"> المتجددة أكثر تلوثًا</label><label><input type="radio" name="q31" value="0"> غير المتجددة أقل تكلفة دائمًا</label></div><div class='buttons'><button type='button' onclick='prevQuestion(31)'>السابق</button><button type='button' onclick='nextQuestion(31)'>التالي</button></div></div>
+<div class="question" id="q32" style="display:none"><p>32- المصدر الأكثر مساهمة في انبعاث غاز ثاني أكسيد الكبريت هو:</p><div class='options'><label><input type="radio" name="q32" value="1"> حرق الفحم والنفط</label><label><input type="radio" name="q32" value="0"> المحيطات</label><label><input type="radio" name="q32" value="0"> التنفس الخلوي</label><label><input type="radio" name="q32" value="0"> الرياح</label></div><div class='buttons'><button type='button' onclick='prevQuestion(32)'>السابق</button><button type='button' onclick='nextQuestion(32)'>التالي</button></div></div>
+<div class="question" id="q33" style="display:none"><p>33- التغير المناخي يؤدي إلى:</p><div class='options'><label><input type="radio" name="q33" value="1"> تغير أنماط الطقس وزيادة الفيضانات</label><label><input type="radio" name="q33" value="0"> ثبات درجات الحرارة</label><label><input type="radio" name="q33" value="0"> انخفاض مستوى البحر</label><label><input type="radio" name="q33" value="0"> زيادة ثبات المناخ</label></div><div class='buttons'><button type='button' onclick='prevQuestion(33)'>السابق</button><button type='button' onclick='nextQuestion(33)'>التالي</button></div></div>
+<div class="question" id="q34" style="display:none"><p>34- أحد أسباب ذوبان الجليد القطبي هو:</p><div class='options'><label><input type="radio" name="q34" value="1"> زيادة الاحتباس الحراري</label><label><input type="radio" name="q34" value="0"> زيادة الأكسجين</label><label><input type="radio" name="q34" value="0"> انخفاض CO₂</label><label><input type="radio" name="q34" value="0"> زيادة الأوزون</label></div><div class='buttons'><button type='button' onclick='prevQuestion(34)'>السابق</button><button type='button' onclick='nextQuestion(34)'>التالي</button></div></div>
+<div class="question" id="q35" style="display:none"><p>35- زيادة استخدام الطاقة الشمسية:</p><div class='options'><label><input type="radio" name="q35" value="1"> تقلل الاعتماد على الوقود الأحفوري</label><label><input type="radio" name="q35" value="0"> تزيد من انبعاثات CO₂</label><label><input type="radio" name="q35" value="0"> تزيد من الأمطار الحمضية</label><label><input type="radio" name="q35" value="0"> تزيد من استخدام النفط</label></div><div class='buttons'><button type='button' onclick='prevQuestion(35)'>السابق</button><button type='button' onclick='nextQuestion(35)'>التالي</button></div></div>
+<div class="question" id="q36" style="display:none"><p>36- القطاع الأكثر مساهمة في انبعاثات غازات الدفيئة عالميًا هو:</p><div class='options'><label><input type="radio" name="q36" value="1"> قطاع الطاقة</label><label><input type="radio" name="q36" value="0"> الزراعة</label><label><input type="radio" name="q36" value="0"> النفايات</label><label><input type="radio" name="q36" value="0"> الغابات</label></div><div class='buttons'><button type='button' onclick='prevQuestion(36)'>السابق</button><button type='button' onclick='nextQuestion(36)'>التالي</button></div></div>
+<div class="question" id="q37" style="display:none"><p>37- الزيادة في درجة حرارة الأرض درجتين مئويتين قد تؤدي إلى:</p><div class='options'><label><input type="radio" name="q37" value="1"> تغيرات مناخية كبيرة</label><label><input type="radio" name="q37" value="0"> انخفاض مستويات البحر</label><label><input type="radio" name="q37" value="0"> ثبات المناخ</label><label><input type="radio" name="q37" value="0"> زيادة الأكسجين</label></div><div class='buttons'><button type='button' onclick='prevQuestion(37)'>السابق</button><button type='button' onclick='nextQuestion(37)'>التالي</button></div></div>
+<div class="question" id="q38" style="display:none"><p>38- من وسائل مواجهة التلوث الهوائي:</p><div class='options'><label><input type="radio" name="q38" value="1"> استخدام الفلاتر والتحكم بالانبعاثات</label><label><input type="radio" name="q38" value="0"> زيادة استخدام الفحم</label><label><input type="radio" name="q38" value="0"> إلغاء الطاقة المتجددة</label><label><input type="radio" name="q38" value="0"> زيادة المصانع</label></div><div class='buttons'><button type='button' onclick='prevQuestion(38)'>السابق</button><button type='button' onclick='nextQuestion(38)'>التالي</button></div></div>
+<div class="question" id="q39" style="display:none"><p>39- العلاقة بين ثاني أكسيد الكبريت والأمطار الحمضية:</p><div class='options'><label><input type="radio" name="q39" value="1"> يزيد SO₂ من تكوين الأمطار الحمضية</label><label><input type="radio" name="q39" value="0"> يقلل SO₂ من الأمطار الحمضية</label><label><input type="radio" name="q39" value="0"> لا علاقة له</label><label><input type="radio" name="q39" value="0"> يعتمد فقط على الميثان</label></div><div class='buttons'><button type='button' onclick='prevQuestion(39)'>السابق</button><button type='button' onclick='nextQuestion(39)'>التالي</button></div></div>
+<div class="question" id="q40" style="display:none"><p>40- الأوزون في طبقة الستراتوسفير:</p><div class='options'><label><input type="radio" name="q40" value="1"> يحمي الأرض من الأشعة فوق البنفسجية</label><label><input type="radio" name="q40" value="0"> يزيد من انبعاثات CO₂</label><label><input type="radio" name="q40" value="0"> يسبب الاحتباس الحراري</label><label><input type="radio" name="q40" value="0"> يزيد من غاز الميثان</label></div><div class='buttons'><button type='button' onclick='prevQuestion(40)'>السابق</button><button type='button' onclick='calculateResult()'>إنهاء الاختبار</button></div></div>
+
+</form>
+<div id="result"></div>
+<div id="answers"></div>
+
+<script>
+let total = 40;
+let correctAnswers = {};
+correctAnswers[1] = 'ثاني أكسيد الكربون الناتج من احتراق الوقود الأحفوري';
+correctAnswers[2] = 'الفحم الحجري المستخدم في محطات الكهرباء';
+correctAnswers[3] = 'أقوى بعدة أضعاف في حبس الحرارة';
+correctAnswers[4] = 'طبقة الأوزون في الستراتوسفير';
+correctAnswers[5] = 'زيادة تراكم الغازات الدفيئة التي تحبس الحرارة';
+correctAnswers[6] = 'عوادم السيارات';
+correctAnswers[7] = 'زيادة الغازات الدفيئة';
+correctAnswers[8] = 'تحلل المواد العضوية في المستنقعات';
+correctAnswers[9] = 'الطاقة الشمسية والرياح';
+correctAnswers[10] = 'ذوبان الجليد وارتفاع مستوى البحار';
+correctAnswers[11] = 'النيتروجين';
+correctAnswers[12] = 'لا تطلق غازات ملوثة أثناء التشغيل';
+correctAnswers[13] = 'المحاصيل الزراعية والزيوت';
+correctAnswers[14] = 'إتلاف الغابات والتربة والمياه';
+correctAnswers[15] = 'الصين';
+correctAnswers[16] = 'الأسمدة الزراعية';
+correctAnswers[17] = 'ارتفاع درجات الحرارة العالمية';
+correctAnswers[18] = 'زيادة انبعاثات الغازات الدفيئة';
+correctAnswers[19] = 'التروبوسفير';
+correctAnswers[20] = 'ارتفاع درجات الحرارة';
+correctAnswers[21] = 'علاقة طردية حيث يزداد الاحترار مع زيادة الاستهلاك';
+correctAnswers[22] = 'خفض الانبعاثات الضارة بالجو';
+correctAnswers[23] = 'زيادة تراكم CO₂ في الغلاف الجوي';
+correctAnswers[24] = 'الأنشطة البشرية كالمصانع والنقل';
+correctAnswers[25] = 'تقليل انبعاثات عوادم السيارات';
+correctAnswers[26] = 'لا تطلق CO₂ أثناء التشغيل';
+correctAnswers[27] = 'كلما زادت الغازات ارتفعت الحرارة';
+correctAnswers[28] = 'تتلف الغابات والتربة والمياه';
+correctAnswers[29] = 'تسرب النفط والنفايات الصناعية';
+correctAnswers[30] = 'زيادة انبعاث الغازات الدفيئة';
+correctAnswers[31] = 'المتجددة لا تنفد وتقلل الانبعاثات';
+correctAnswers[32] = 'حرق الفحم والنفط';
+correctAnswers[33] = 'تغير أنماط الطقس وزيادة الفيضانات';
+correctAnswers[34] = 'زيادة الاحتباس الحراري';
+correctAnswers[35] = 'تقلل الاعتماد على الوقود الأحفوري';
+correctAnswers[36] = 'قطاع الطاقة';
+correctAnswers[37] = 'تغيرات مناخية كبيرة';
+correctAnswers[38] = 'استخدام الفلاتر والتحكم بالانبعاثات';
+correctAnswers[39] = 'يزيد SO₂ من تكوين الأمطار الحمضية';
+correctAnswers[40] = 'يحمي الأرض من الأشعة فوق البنفسجية';
+
+function showQuestion(id) {
+    document.querySelectorAll('.question').forEach(q => q.style.display = "none");
+    document.getElementById('q' + id).style.display = "block";
+}
+function nextQuestion(i) { showQuestion(i+1); }
+function prevQuestion(i) { showQuestion(i-1); }
+
+function calculateResult() {
+    let score = 0;
+    let wrongAnswers = [];
+    for (let i = 1; i <= total; i++) {
+        let q = document.querySelector('input[name="q'+i+'"]:checked');
+        if (q && q.value === "1") {
+            score++;
+        } else if (!q || q.value !== "1") {
+            wrongAnswers.push(i);
+        }
+    }
+    document.getElementById("result").innerText = "درجتك: " + score + " من " + total;
+    let answersDiv = document.getElementById("answers");
+    answersDiv.innerHTML = "<h3>الإجابات الصحيحة للأسئلة الخاطئة:</h3>";
+    wrongAnswers.forEach(num => {
+        answersDiv.innerHTML += "<p>السؤال " + num + ": " + correctAnswers[num] + "</p>";
+    });
+}
+</script>
+
+</body>
+</html>
